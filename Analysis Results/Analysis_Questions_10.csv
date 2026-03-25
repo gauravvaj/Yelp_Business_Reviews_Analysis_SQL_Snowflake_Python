@@ -1,0 +1,19 @@
+﻿BUSINESS_ID,NAME,TOTAL_REVIEWS,,,,,,,,,,,
+_ab50qdWOk0DdB6XOrBitw,Acme Oyster House,7558,,,,"Q10. Find top 10 businesses with highest positive sentiment reviews .
+
+SELECT b.business_id,b.name,  COUNT(*) as total_reviews 
+from tbl_yelp_reviews r
+inner join  tbl_yelp_business  b  on r.business_id=b.business_id
+where r.sentiments='Positive'
+GROUP BY 1,2 
+Order by 3 desc
+LIMIT 10 ; ",,,,,,,
+ac1AeYqs8Z4_e2X5M3if2A,Oceana Grill,7349,,,,,,,,,,,
+GXFMD0Z4jEVZBCsbPf4CTQ,Hattie B’s Hot Chicken - Nashville,5972,,,,,,,,,,,
+ytynqOUb3hjKeJfRj5Tshw,Reading Terminal Market,5739,,,,,,,,,,,
+oBNrLz4EDhiscSlbOl8uAw,Ruby Slipper - New Orleans,5148,,,,,,,,,,,
+iSRTaT9WngzB8JJ2YKJUig,Mother's Restaurant,4916,,,,,,,,,,,
+_C7QiQQc47AOEv4PE3Kong,Commander's Palace,4911,,,,,,,,,,,
+VQcCL9PiNL_wkGf-uF3fjg,Royal House,4883,,,,,,,,,,,
+GBTPC53ZrG1ZBY3DT8Mbcw,Luke,4587,,,,,,,,,,,
+6a4gLLFSgr-Q6CZXDLzBGQ,Cochon,4410,,,,,,,,,,,
