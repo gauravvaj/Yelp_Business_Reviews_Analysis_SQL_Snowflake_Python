@@ -1,0 +1,17 @@
+﻿MONTHS,NO_OF_REVIEWS,,,,,,,,,
+7,654627,,,"Q5. Find the month with highest number of reviews .
+
+SELECT EXTRACT(month from review_Date) as months
+, count(*) as no_of_reviews from tbl_yelp_reviews 
+group by 1 order by 2 desc ;",,,,,,
+8,636384,,,,,,,,,
+1,604532,,,,,,,,,
+6,601737,,,,,,,,,
+3,598555,,,,,,,,,
+5,586575,,,,,,,,,
+10,571809,,,,,,,,,
+9,565374,,,,,,,,,
+4,551471,,,,,,,,,
+2,544125,,,,,,,,,
+12,543573,,,,,,,,,
+11,531518,,,,,,,,,
